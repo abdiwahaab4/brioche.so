@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%; /* White background */
+					--foreground: 0 0% 0%; /* Black text */
+					--card: 33 100% 50%; /* Orange background for cards */
+					--card-foreground: 0 0% 0%; /* Black text for cards */
+					--popover: 33 100% 50%; /* Orange background for popovers */
+					--popover-foreground: 0 0% 0%; /* Black text for popovers */
+					--primary: 33 100% 50%; /* Orange primary color */
+					--primary-foreground: 0 0% 0%; /* Black text for primary */
+					--secondary: 0 0% 0%; /* Black secondary color */
+					--secondary-foreground: 33 100% 50%; /* Orange text for secondary */
+					--muted: 0 0% 90%; /* Light gray for muted elements */
+					--muted-foreground: 0 0% 0%; /* Black text for muted elements */
+					--accent: 33 100% 50%; /* Orange accent color */
+					--accent-foreground: 0 0% 0%; /* Black text for accent */
+					--destructive: 0 84.2% 60.2%; /* Red for destructive elements */
+					--destructive-foreground: 0 0% 98%; /* White text for destructive */
+					--border: 0 0% 0%; /* Black border */
+					--input: 0 0% 0%; /* Black input border */
+					--ring: 33 100% 50%; /* Orange ring */
+					--radius: 0.5rem; /* Border radius */
+				}
+				.dark {
+					--background: 0 0% 0%; /* Black background */
+					--foreground: 33 100% 50%; /* Orange text */
+					--card: 0 0% 0%; /* Black background for cards */
+					--card-foreground: 33 100% 50%; /* Orange text for cards */
+					--popover: 0 0% 0%; /* Black background for popovers */
+					--popover-foreground: 33 100% 50%; /* Orange text for popovers */
+					--primary: 33 100% 50%; /* Orange primary color */
+					--primary-foreground: 0 0% 0%; /* Black text for primary */
+					--secondary: 33 100% 50%; /* Orange secondary color */
+					--secondary-foreground: 0 0% 0%; /* Black text for secondary */
+					--muted: 0 0% 15%; /* Dark gray for muted elements */
+					--muted-foreground: 33 100% 50%; /* Orange text for muted elements */
+					--accent: 33 100% 50%; /* Orange accent color */
+					--accent-foreground: 0 0% 0%; /* Black text for accent */
+					--destructive: 0 62.8% 30.6%; /* Dark red for destructive elements */
+					--destructive-foreground: 0 0% 98%; /* White text for destructive */
+					--border: 33 100% 50%; /* Orange border */
+					--input: 33 100% 50%; /* Orange input border */
+					--ring: 33 100% 50%; /* Orange ring */
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-background p-6">
+      <div class="flex flex-col items-center">
+        <img aria-hidden="true" alt="Dilek logo" src="brioche logo.jpg" class="mb-4" />
+        <h2 class="text-2xl font-bold text-primary">OUR MENU</h2>
+      </div>
+      <div class="flex justify-center mt-6 space-x-4">
+        <!-- Chicken Section -->
+        <a href="file:///C:/Users/Galbooy/OneDrive/Documents/Untitled-1.html" class="bg-card p-4 border border-border rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-secondary">Chicken</h3>
+        </a>
+        <!-- Meat Section -->
+        <a href="meat.html" class="bg-card p-4 border border-border rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-secondary">Meat</h3>
+        </a>
+         <!-- Fries Section -->
+         <a href="fries.html" class="bg-card p-4 border border-border rounded-lg shadow-md hover:shadow-lg transition">
+            <h3 class="text-lg font-semibold text-secondary">Fries & More</h3>
+          </a>
+        <!-- Adds On Section -->
+        <a href="adds-on.html" class="bg-card p-4 border border-border rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-secondary">Drinks</h3>
+        </a>
+       
+      </div>
+    </div>
+  </body>
+</html>
